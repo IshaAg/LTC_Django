@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTER</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1><b>Fill in the following details :</b></h1>
+</br></br>
+	<form action="/register1/" method="post">{% csrf_token %}
+		<p>Name : <input type="text" name="r_name" size="20" / > </p>
+		</br>
+		<p>Employee ID : <input type="text" name="r_id" size="20" / > </p>
+		</br>
+		<p>Designation : <input type="text" name="r_designation" size="20" / > </p>
+		</br>
+		<p>Department : <input type="text" name="r_dept" size="20" / > </p>
+		</br>
+		<p>Grade Pay : <input type="text" name="r_pay" size="20" / > </p>
+		</br>
+		<p>Home Town : <input type="text" name="r_hometown" size="20" / > </p>
+		</br>
+		<p>Date of Birth : <input type="text" name="r_dob" size="20" value="YYYY-MM-DD" / > </p>
+		</br>
+		<p>email ID : <input type="text" name="r_email" size="20" / > </p>
+		</br>
+		<p>Address : <input type="text" name="r_add" size="20" / > </p>
+		</br>
+		<p>Contact No. : <input type="text" name="r_contact" size="20" / > </p>
+		</br>
+		<p>Date of Appointment : <input type="text" name="r_appt" size="20" value="YYYY-MM-DD"/ > </p>
+		</br>
+		<p>No.dependents : <input type="text" name="r_members" size="20" value="0"/ > </p>
+		</br>
+		<p>&nbsp&nbspName ofDependent &nbsp&nbsp&nbsp&nbsp&nbspAge&nbsp&nbsp&nbspRelationship with employee</p>
+		<input type="text" size="40" name="r_n1"> <input type="text" size="15" name="r_a1"><input type="text" size="20" name="r_r1"></br>
+		<input type="text" size="40" name="r_n2"> <input type="text" size="15" name="r_a2"><input type="text" size="20" name="r_r2"></br>
+		<input type="text" size="40" name="r_n3"> <input type="text" size="15" name="r_a3"><input type="text" size="20" name="r_r3"></br>
+		<input type="text" size="40" name="r_n4"> <input type="text" size="15" name="r_a4"><input type="text" size="20" name="r_r4"></br>
+		<input type="text" size="40" name="r_n5"> <input type="text" size="15" name="r_a5"><input type="text" size="20" name="r_r5"></br>
+		<input type="text" size="40" name="r_n6"> <input type="text" size="15" name="r_a6"><input type="text" size="20" name="r_r6"></br>
+		<input type="text" size="40" name="r_n7"> <input type="text" size="15" name="r_a7"><input type="text" size="20" name="r_r7"></br>
+		</br></br></br>
+		<center>
+		<input type="submit" value="SUBMIT">
+		</center>
+	</form>
+</body>
+</html>
+

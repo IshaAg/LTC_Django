@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTERED</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<center>
+	<p>You have been registered</p>
+	<p>successfully !</p>
+
+	</center>
+	</br></br></br>
+	<right>
+		<a href="/">Go to main page</a>
+	</right>
+</body>
+</html>

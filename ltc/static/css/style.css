@@ -1,0 +1,60 @@
+body { 
+  font: normal 1.1em arial, sans-serif;
+  background: #F8F7EE url(../images/pattern.png);
+  color: #7A7A68;
+}f
+
+#topbar{
+width:100%;
+line-height: 10%;
+background-color:black;
+}
+
+p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1, h2, h3 { 
+  font: normal 140% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;
+  
+
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #009FBC;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #009FBC;
+  padding: 0 0 5px 0;
+  font: normal 120% arial;
+}
+
+h5, h6 { 
+  color: #bbb;
+  font: italic 95% arial;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Claim</title>
+{% load static %}
+<link rel= "stylesheet" type = "text/css" href ={% static 'css/style.css' %}>
+	
+</head>
+
+<body>
+
+	<h2><b><u>Leave Travel Concession Claim</b></u></h2></br></br>
+	<h3>Welcome to LTC Portal</h3>
+	</br></br>
+	<left>
+	<table>
+	<form action="/claim2/" method="post">{% csrf_token %}
+		<tr><th>Name : </th><td><input type="text" name="name2" size="20" / > </td>
+		</tr>
+		<tr><th>Employee ID :</th><td><input type="text" name="id2" size="20" / > </td>
+		</tr>
+		<tr><th>Designation : </th><td><input type="text" name="designation2" size="20" / > </td>
+		</tr>
+		<tr><th>Department :</th><td> <input type="text" name="department2" size="20" / > </td>
+		</tr>
+		<tr><th>Pay Band :</th><td><input type="text" name="pay2" size="20" / > </td>
+		</tr>
+		<tr><th>Home Town :</th><td><input type="text" name="hometown2" size="20" / > </td>
+		</tr>
+		<tr><th>Nearest Staion/Airport :</th><td><input type="text" name="nearest2" size="20" / > </td>
+		</tr>
+		<tr><th>Nearest Staion/Airport of Destination :</th><td><input type="text" name="dest2" size="20" / > </td>
+		</tr>
+		<tr><th>Nature of LTC :</th><td>
+		<input type="radio" name="nature2" value="hometown">Home Town
+		<input type="radio" name="nature2" value="allindia">All India
+		</td></tr>
+		<tr><th>Block Year :</th><td><input type="text" name="blockyear2" size="20" / > </td>
+		</tr>
+		<tr><th>Nature of Leave Sanctioned :</th><td><input type="text" name="leave2" size="20" / > </td>
+		</tr>
+		<tr><th>Date of Onward Journey of LTC :</th><td><input type="date" name="onward2" size="20" / > </td>
+		</tr>
+		<tr><th>Date of Return Journey of LTC :</th><td><input type="date" name="return2" size="20" / > </td>
+		</tr>
+		<tr><th>Sanction No :</th><td><input type="text" name="sanctionletter" size="20" / > </td>
+		</tr>
+		<tr><th>Advance Drawn :</th><td><input type="text" name="advance2" size="20" / > </td>
+		</tr>
+		<tr><th>No. of family members in respect of whom the LTC is claimed :</th><td><input type="text" name="members2" size="5" / > </td>
+		</tr><tr></tr>
+		<tr><th>Name of employee/family members</th><th>  Age</th><th>  Relationship with employee</th></tr>
+		<tr><td align="right"><input type="text" size="40"/></left></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td align="right"><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td align="right"><input type="text" size="40"></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td align="right"><input type="text" size="40"></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>		
+		<tr><td align="right"><input type="text" size="40"></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td align="right"><input type="text" size="40"></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td align="right"><input type="text" size="40"></td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		
+		<tr><th><u>JOURNEY DETAILS : </u></th> </tr>
+		<tr><th>Departure : </th></tr>
+		<tr><td align="right"><input type="text" size="25" value="station" name="d_station"></td><td><input type="text" size="15" value="date" name="d_date"></td><td><input type="text" size="15" value="hour" name="d_hour"></td></tr>
+		<tr><th>Arrival : </th></tr>
+		<tr><td align="right"><input type="text" size="25" value="station" name="a_station"></td><td><input type="text" size="15" value="date" name="a_date"></td><td><input type="text" size="15" value="hour" name="a_hour"></td></tr>
+		<tr><th>Class of Travel : </th><td><input type="text" name="class" size="20" / > </td>
+		</tr>
+		<tr><th>Fare : </th><td><input type="text" name="fare" size="20" / > </td>
+		</tr>
+		<tr><th>Train/Flight Details :</th><td><input type="text" name="train_flight_no" size="20" / > </td>
+		</tr>
+		<tr><th>Total Claim :</th><td><input type="text" name="claim2" size="20" / ></td></tr>
+		
+		<tr><th>Net Claim/ Refund :</th><td><input type="text" name="refund" size="20" / > </td></tr>
+		<tr><td align="center"><input type="submit" value="Claim" /></td></tr>
+	</form>
+</table>
+</left>
+</body>
+</html>

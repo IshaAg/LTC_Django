@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+
+<body>
+
+	<h2><b><u>Request for Leave Travel Concession and Advance</b></u></h2>
+	</br></br>
+	<form action="/advance1/" method="post">{% csrf_token %}
+		<p>Name : <input type="text" name="name" size="20" / > </p>
+		</br>
+		<p>Employee ID : <input type="text" name="id" size="20" / > </p>
+		</br>
+		<p>Designation : <input type="text" name="designation" size="20" / > </p>
+		</br>
+		<p>Department : <input type="text" name="department" size="20" / > </p>
+		</br>
+		<p>Pay Band : <input type="text" name="pay" size="20" / > </p>
+		</br>
+		<p>Date of Appointment : <input type="date" name="appoint" size="20" / > </p>
+		</br>
+		<p>Whether : 
+		<input type="radio" name="attr" value="permanent">Permanent
+		<input type="radio" name="attr" value="probation"> Probation
+		</br></br></p>
+		<p>Home Town : <input type="text" name="hometown" size="20" / > </p>
+		</br>
+		<p>Nearest Staion/Airport : <input type="text" name="nearest" size="20" / > </p>
+		</br>
+		<p>Nature of LTC :
+		<input type="radio" name="nature" value="hometown">Home Town
+		<input type="radio" name="nature" value="allindia">All India
+		</br></br></p>
+		<p>Block Year : <input type="text" name="blockyear" size="20" / > </p>
+		</br>
+		<p>Nature of Leave : <input type="text" name="leave" size="20" / > </p>
+		</br>
+		<p>Leave Period : <input type="text" name="period" size="20" / > </p>
+		</br>
+		<p>Date of Onward Journey Planned : <input type="text" name="onwarddate" size="20" / > </p>
+		</br>
+		<p>Date of Return Journey Planned : <input type="text" name="returndate" size="20" / > </p>
+		</br>
+		<p>Mode of Journey : <input type="text" name="mode" size="20" / > </p>
+		</br>
+		<p>Approx Fare of Onward Journey Planned : <input type="text" name="onwardfare" size="20" / > </p>
+		</br>
+		<p>Approx Fare of Return Journey Planned : <input type="text" name="returnfare" size="20" / > </p>
+		</br>
+		<p>Total (Onward + Return) : <input type="text" name="total" size="20" / > </p>
+		</br>
+		<p>Advance Required or not :
+		<input type="radio" name="req" value="yes">Yes
+		<input type="radio" name="req" value="no">No
+		</br></br></p>
+		<p>Advance Drawn : <input type="text" name="advance" value="0" size="20" / > </p>
+		</br>
+		<p>No. of members of the family in respect of whom the LTC is requested : <input type="text" name="members" size="5" / > </p>
+		</br>
+		<p>SNo. &nbsp&nbspName of employee/family members &nbsp&nbsp&nbsp&nbsp&nbspDoB/Age&nbsp&nbsp&nbspRelationship with employee</p>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>		
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		</br></br>
+		<input type="submit" value="Apply" />
+	</form>
+
+</body>
+</html>

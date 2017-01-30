@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Logged</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+
+<body>
+<center>
+<div>
+	<p>Those who have filed for advance till now :</p></br></br>
+	<table>
+		<tr>
+		<th>Employee ID</th>
+		<th>Sanction ID</th>
+		</tr>
+	{% for i in advance %}
+		<tr>
+		{% for j in i %}
+			<td><center>{{ j }}</center></td>
+		{% endfor %}
+		</tr>
+	{% endfor %}
+	<p>Total = {{ count_advance }}</p>
+	</table></br></br></br>
+	<p>Those who have filed for claim till now :</p></br></br>
+	<table>
+		<tr>
+		<th>Employee ID</th>
+		<th>Sanction ID</th>
+		</tr>
+	{% for i in claiming %}
+		<tr>
+		{% for j in i %}
+			<td><center>{{ j }}</center></td>
+		{% endfor %}
+		</tr>
+	{% endfor %}
+	<p><b>Total = {{ count_claim }}</p>
+	</table>
+	</br></br></br>
+	<center>
+		<a href="/adminlogin/">LOGOUT</a>
+	</center>
+		
+</div>
+</center>
+</body>
+</html>
+

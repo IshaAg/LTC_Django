@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Claim</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+
+<body>
+
+	<h2><b><u>Leave Travel Concession Claim</b></u></h2>
+	</br></br>
+	<form action="/claim2/" method="post">{% csrf_token %}
+		<p>Name : <input type="text" name="name2" size="20" / > </p>
+		</br>
+		<p>Employee ID : <input type="text" name="id2" size="20" / > </p>
+		</br>
+		<p>Designation : <input type="text" name="designation2" size="20" / > </p>
+		</br>
+		<p>Department : <input type="text" name="department2" size="20" / > </p>
+		</br>
+		<p>Pay Band : <input type="text" name="pay2" size="20" / > </p>
+		</br>
+		<p>Home Town : <input type="text" name="hometown2" size="20" / > </p>
+		</br>
+		<p>Nearest Staion/Airport : <input type="text" name="nearest2" size="20" / > </p>
+		</br>
+		<p>Nearest Staion/Airport of Destination : <input type="text" name="dest2" size="20" / > </p>
+		</br>
+		<p>Nature of LTC :
+		<input type="radio" name="nature2" value="hometown">Home Town
+		<input type="radio" name="nature2" value="allindia">All India
+		</br></br></p>
+		<p>Block Year : <input type="text" name="blockyear2" size="20" / > </p>
+		</br>
+		<p>Nature of Leave Sanctioned : <input type="text" name="leave2" size="20" / > </p>
+		</br>
+		<p>Date of Onward Journey of LTC : <input type="date" name="onward2" size="20" / > </p>
+		</br>
+		<p>Date of Return Journey of LTC : <input type="date" name="return2" size="20" / > </p>
+		</br>
+		<p>Sanction No : <input type="text" name="sanctionletter" size="20" / > </p>
+		</br>
+		<p>Advance Drawn : <input type="text" name="advance2" size="20" / > </p>
+		</br>
+		<p>No. of members of the family in respect of whom the LTC has been claimed : <input type="text" name="members2" size="5" / > </p>
+		</br>
+		<p>SNo. &nbsp&nbspName of employee/family members &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Age&nbsp&nbsp&nbspRelationship with employee</p>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>		
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		<input type="text" size="40"> <input type="text" size="15"><input type="text" size="20"></br>
+		</br></br>
+		<p><u>JOURNEY DETAILS : </u></p> </br>
+		<p>Departure : </p></br>
+		<input type="text" size="25" value="station" name="d_station"> <input type="text" size="15" value="date" name="d_date"><input type="text" size="15" value="hour" name="d_hour"></br>
+		<p>Arrival : </p></br>
+		<input type="text" size="25" value="station" name="a_station"> <input type="text" size="15" value="date" name="a_date"><input type="text" size="15" value="hour" name="a_hour"></br></br>
+		<p>Class of Travel : <input type="text" name="class" size="20" / > </p>
+		</br>
+		<p>Fare : <input type="text" name="fare" size="20" / > </p>
+		</br>
+		<p>Train/Flight Details : <input type="text" name="train_flight_no" size="20" / > </p>
+		</br>
+		<p>Total Claim : <input type="text" name="claim2" size="20" / > </p>
+		</br>
+		<p>Net Claim/ Refund : <input type="text" name="refund" size="20" / > </p>
+		</br></br>
+		<input type="submit" value="Claim" />
+	</form>
+
+</body>
+</html>

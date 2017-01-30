@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<center>	
+	<h2><b><u>Login Page for Employees of IIT-BHU, Varanasi</b></u></h2>
+	</br></br>
+	<form action="/login1/" method="POST">{% csrf_token %}
+		<p>Login ID : <input type="text" name="id" size="20" / > </p>
+		</br>
+		<p>Password : <input type="password" name="password" size="20" / > </p>
+		</br></br>
+		<input type="submit" value="Log In" />
+	</form>
+	</center>
+	</br></br></br>
+	<right>
+		<a href="/register/">New User !!! Click here to register</a>	
+	</right>
+	</br></br></br>
+	<right>
+		<a href="/">Go to main page</a>
+	</right>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loggeg In</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+
+<body>
+
+
+
+<h2>Profile</h2>
+</br></br></br>
+
+<center>
+<table style="width:50%">
+	<tr>
+	<td><b>Name :</b></td>
+	<td>{{ e_name }}</td>
+	</tr>
+	<tr>
+	<td><b>Employee ID :</b></td>
+	<td>{{ e_id }}</td>
+	</tr>
+	<tr>
+	<td><b>Designation :</b></td>
+	<td>{{ e_des }}</td>
+	</tr>
+	<tr>
+	<td><b>Date of Birth :</b></td>
+	<td>{{ e_dob }}</td>
+	</tr>
+	<tr>
+	<td><b>Grade Pay :</b></td>
+	<td>{{ e_pay }}</td>
+	</tr>
+	<tr>
+	<td><b>Department</b></td>
+	<td>{{ e_dept }}</td>
+	</tr>
+	<tr>
+	<td><b>Home Town :</b></td>
+	<td>{{ e_ht }}</td>
+	</tr>
+	<tr>
+	<td><b>Email ID :</b></td>
+	<td>{{ e_email }}</td>
+	</tr>
+	<tr>
+	<td><b>Address :</b></td>
+	<td>{{ e_add }}</td>
+	</tr>
+	<tr>
+	<td><b>Contact :</b></td>
+	<td>{{ e_con }}</td>
+	</tr>
+	<tr>
+	<td><b>Date of Appointment :</b></td>
+	<td>{{ e_appt }}</td>
+	</tr>
+	<td><b>No of Dependents :</b></td>
+	<td>{{ members }}</td>
+	</tr>
+</table>
+</center>
+</br></br></br>
+	<center>
+		<a href="/login/">LOGOUT</a>
+	</center>
+
+</body>
+</html>

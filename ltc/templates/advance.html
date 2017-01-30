@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+</head>
+
+<body>
+
+	<h2><b><u>Request for Leave Travel Concession and Advance</b></u></h2>
+	</br></br><center>
+	<table>
+	<form action="/advance1/" method="post">{% csrf_token %}
+		<tr><th>Name : </th><td><input type="text" name="name" size="20" / > </td>
+		</tr>
+		<tr><th>Employee ID : </th><td><input type="text" name="id" size="20" / > </td>
+		</tr>
+		<tr><th>Designation : </th><td><input type="text" name="designation" size="20" / > </td>
+		</tr>
+		<tr><th>Department : </th><td><input type="text" name="department" size="20" / > </td>
+		</tr>
+		<tr><th>Pay Band : </th><td><input type="text" name="pay" size="20" / > </td>
+		</tr>
+		<tr><th>Date of Appointment : </th><td><input type="date" name="appoint" size="20" / > </td>
+		</tr>
+		<tr><th>Whether :</th><td> 
+		<input type="radio" name="attr" value="permanent">Permanent
+		<input type="radio" name="attr" value="probation"> Probation</td>
+		</tr>
+		<tr><th>Home Town : </th><td><input type="text" name="hometown" size="20" / > </td>
+		</tr>
+		<tr><th>Nearest Staion/Airport : </th><td><input type="text" name="nearest" size="20" / > </td>
+		</tr>
+		<tr><th>Nature of LTC :</th><td>
+		<input type="radio" name="nature" value="hometown">Home Town
+		<input type="radio" name="nature" value="allindia">All India
+		</td></tr>
+		<tr><th>Block Year : </th><td><input type="text" name="blockyear" size="20" / > </td>
+		</tr>
+		<tr><th>Nature of Leave : </th><td><input type="text" name="leave" size="20" / > </td>
+		</tr>
+		<tr><th>Leave Period : </th><td><input type="text" name="period" size="20" / > </td>
+		</tr>
+		<tr><th>Date of Onward Journey Planned : </th><td><input type="text" name="onwarddate" size="20" / > </td>
+		</tr>
+		<tr><th>Date of Return Journey Planned : </th><td><input type="text" name="returndate" size="20" / > </td>
+		</tr>
+		<tr><th>Mode of Journey : </th><td><input type="text" name="mode" size="20" / > </td>
+		</tr>
+		<tr><th>Approx Fare of Onward Journey Planned :</th><td><input type="text" name="onwardfare" size="20" / > </td>
+		</tr>
+		<tr><th>Approx Fare of Return Journey Planned : </th><td><input type="text" name="returnfare" size="20" / > </td>
+		</tr>
+		<tr><th>Total (Onward + Return) :</th><td> <input type="text" name="total" size="20" / > </td>
+		</tr>
+		<tr><th>Advance Required or not :</th><td>
+		<input type="radio" name="req" value="yes">Yes
+		<input type="radio" name="req" value="no">No
+		</td></tr>
+		<tr><th>Advance Drawn :</th><td><input type="text" name="advance" value="0" size="20" / > </td>
+		</tr>
+		<tr><th>No. of members of the family in respect of whom the LTC is requested : </th><td><input type="text" name="members" size="5" / > </td>
+		</tr>
+		<tr><th>Name of employee/family members</th><th> Age </th><th>Relationship with employee</th></tr>
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>	
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td><input type="text" size="40"></td><td> <input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		<tr><td><input type="text" size="40"> </td><td><input type="text" size="15"></td><td><input type="text" size="20"></td></tr>
+		
+		<tr><td><center><input type="submit" value="Apply" /></center></td></tr>
+	</form>
+	</table></center>
+
+</body>
+</html>
